@@ -19,6 +19,8 @@ const connect = async () => {
     }
 };
 
+connect();
+
 const server = app.listen(port, host, () => {
     console.log(`Node server is Listening to ${server.address().port}`)
 });
