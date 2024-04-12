@@ -31,7 +31,7 @@ app.put('/updateUser', (req, res) => {
     });
 });
 
-app.delete('/updateUser', (req, res) => {
+app.delete('/deleteUser', (req, res) => {
     controller.deleteUser(req.body, (callback) => {
         res.send(callback);
     });
