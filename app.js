@@ -20,20 +20,20 @@ app.get('/users', (req, res) => {
 });
 
 app.post('/createUser', (req, res) => {
-    controller.addUser(req.body, (callback) => {
+    controller.addUser(req.body, (callack) => {
         res.send();
     });
 });
 
 app.put('/updateUser', (req, res) => {
-    controller.updateUser(req.body, (callback) => {
-        res.send(callback);
+    controller.updateUser(req.body, (callack) => {
+        res.send(callack);
     });
 });
 
 app.delete('/deleteUser', (req, res) => {
-    controller.deleteUser(req.body, (callback) => {
-        res.send(callback);
+    controller.deleteUser(req.body, (callack) => {
+        res.send(callack);
     });
 });
 
